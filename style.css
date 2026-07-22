@@ -81,6 +81,15 @@ footer {
   padding: 15px;
 }
 
+nav.scrolled {
+  background-color: #1a252f;
+  padding: 8px 0;
+}
+
+nav a.active {
+  background-color: #5d1abc;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
