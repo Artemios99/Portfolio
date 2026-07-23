@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+header,
+nav,
+footer,
+article {
+  transition: background-color 1.3s, color 0.9s;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,6 +16,7 @@ body {
   padding-top: 70px;
   background-color: #f4f4f4;
   color: #333;
+  transition: background-color 1.8s, color 0.9s;
 }
 
 header {
@@ -88,6 +96,31 @@ nav.scrolled {
 
 nav a.active {
   background-color: #5d1abc;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+body.dark-mode {
+  background-color: #090933;
+  color: #e0e0e0;
+}
+
+body.dark-mode article {
+  background-color: #2a2a3e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #0c0c59;
 }
 
 @media (max-width: 768px) {
